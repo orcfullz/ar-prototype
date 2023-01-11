@@ -3,24 +3,20 @@
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
     <!-- we import arjs version without NFT but with marker + location based support -->
     <!-- <script src="AR.js/aframe/build/aframe-ar.js"></script> -->
-    <!-- <script src='AR.js/aframe/build/aframe-ar.js'></script> -->
-    <script src='new.js'></script>
-
+    <script src='AR.js/aframe/build/aframe-ar.js'></script>
     <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs='sourceType: webcam;'>
-            <a-marker-camera type="pattern"  type='pattern' url='pattern.patt'>
+        <a-scene embedded arjs>
+        <a-marker preset='custom' type='pattern' url='pattern.patt'>
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
             position="0 0 0"
             scale="0.05 0.05 0.05"
             gltf-model="scene.gltf"
             ></a-entity>
-            </a-marker-camera>
+        </a-marker>
         <!-- <a-marker-camera type=‘pattern’ patternUrl=‘pattern.patt’></a-marker-camera> -->
       
         <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
-
-  

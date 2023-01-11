@@ -7458,7 +7458,7 @@
                             return (
                                 (C.subMarkersControls[0] = { parameters: {}, poseMatrix: new I.Matrix4().makeTranslation(0, 0, 0).toArray() }),
                                 "artoolkit" === A
-                                    ? ((C.subMarkersControls[0].parameters.type = "pattern"), (C.subMarkersControls[0].parameters.patternUrl = B + "examples/marker-training/examples/pattern-files/pattern-hiro.patt"))
+                                    ? ((C.subMarkersControls[0].parameters.type = "pattern"), (C.subMarkersControls[0].parameters.patternUrl = B + "examples/marker-training/examples/pattern-files/pattern.patt"))
                                     : console.assert(!1),
                                 C
                             );
@@ -7682,7 +7682,7 @@
                                     B.changeMatrixMode(A.data.changeMatrixMode);
                                     var C = Object.assign({}, B.defaultMarkerParameters);
                                     "hiro" === A.data.preset
-                                        ? ((C.type = "pattern"), (C.patternUrl = F.baseURL + "examples/marker-training/examples/pattern-files/pattern-hiro.patt"), (C.markersAreaEnabled = !1))
+                                        ? ((C.type = "pattern"), (C.patternUrl = "pattern.patt"), (C.markersAreaEnabled = !1))
                                         : "kanji" === A.data.preset
                                         ? ((C.type = "pattern"), (C.patternUrl = F.baseURL + "examples/marker-training/examples/pattern-files/pattern-kanji.patt"), (C.markersAreaEnabled = !1))
                                         : "area" === A.data.preset

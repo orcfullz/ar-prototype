@@ -1,0 +1,293 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "TurboSquid Stem Converter v1.0.0"
+  },
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 3412,
+      "type": "VEC3",
+      "max": [
+        11.780501365661621,
+        10.805071830749512,
+        6.817007064819336
+      ],
+      "min": [
+        -9.406693458557129,
+        -9.22076416015625,
+        -24.351375579833984
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 3412,
+      "type": "VEC3",
+      "max": [
+        0.9999659061431885,
+        0.998896598815918,
+        0.9997074604034424
+      ],
+      "min": [
+        -0.9999837279319763,
+        -0.9996584057807922,
+        -0.9999997019767761
+      ]
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 3412,
+      "type": "VEC2",
+      "max": [
+        0.9981110095977783,
+        0.9990280270576477
+      ],
+      "min": [
+        0.0009720000089146197,
+        0.0015839934349060059
+      ]
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 17940,
+      "type": "SCALAR",
+      "max": [
+        3411.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 145064,
+      "uri": "manekiNeko.bin"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 40944,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 40944,
+      "byteLength": 40944,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 81888,
+      "byteLength": 27296,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 109184,
+      "byteLength": 35880,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "manekiNekoMat",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "occlusionTexture": {
+        "index": 1
+      },
+      "normalTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "catFigure",
+      "primitives": [
+        {
+          "mode": 4,
+          "material": 0,
+          "indices": 3,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "ManekiNekoGroup_$_Translation",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        15.584090232849121,
+        -0.0,
+        1.0
+      ],
+      "children": [
+        2
+      ]
+    },
+    {
+      "name": "ManekiNekoGroup_$_PreRotation",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.371138828673793e-08,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        -4.371138828673793e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "children": [
+        3
+      ]
+    },
+    {
+      "name": "ManekiNekoGroup",
+      "children": [
+        4
+      ]
+    },
+    {
+      "name": "catFigure_$_Translation",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.006060600280761719,
+        -0.023273468017578125,
+        -0.0012760162353515625,
+        1.0
+      ],
+      "children": [
+        5
+      ]
+    },
+    {
+      "name": "catFigure_$_GeometricTranslation",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -1.1599831581115723,
+        -0.695772647857666,
+        8.768561363220215,
+        1.0
+      ],
+      "children": [
+        6
+      ]
+    },
+    {
+      "name": "catFigure",
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/baseColor.jpg"
+    },
+    {
+      "uri": "textures/occlusionRoughnessMetallic.jpg"
+    },
+    {
+      "uri": "textures/normal.png"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

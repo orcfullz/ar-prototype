@@ -28,13 +28,18 @@
         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
-            position="0 2 0"
-            scale="1.5 1.5 1.5"
-            gltf-model="Wolf-Blender-2.82a.gltf"
+            position="0 0 0"
+            scale="0.8 0.8 0.8"
+            rotation="-15 0 0"
+            gltf-model="10.gltf"
+            shadow="receive:true"
             animation-mixer="loop:repeat"
             ></a-entity>
+
                 <a-animation attribute="rotation" dur="7000" to="0 360 0" easing="linear" repeat="indefinite">
                 </a-animation>
+                
+
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>

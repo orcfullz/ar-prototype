@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    
+
     <!-- we import arjs version without NFT but with marker + location based support -->
     <!-- <script src="AR.js/aframe/build/aframe-ar.js"></script> -->
     <!-- <script src='AR.js/aframe/build/aframe-ar.js'></script> -->
@@ -25,10 +28,13 @@
         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
-            position="0 0 0"
-            scale="1 1 1"
-            gltf-model="4.gltf"
+            position="0 2 0"
+            scale="1.5 1.5 1.5"
+            gltf-model="Wolf-Blender-2.82a.gltf"
+            animation-mixer="loop:repeat"
             ></a-entity>
+                <a-animation attribute="rotation" dur="7000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>

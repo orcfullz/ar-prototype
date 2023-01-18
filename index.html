@@ -24,24 +24,43 @@
     </body> -->
 
     <body style="margin : 0px; overflow: hidden;">
+       
         <a-scene embedded arjs>
+            <a-assets>
+                <audio id="sound" src="ment2.mp3" preload="auto"></audio>
+              </a-assets>
         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-entity
+            <a-entity soundhandler
             position="0 0 0"
             scale="0.8 0.8 0.8"
             rotation="-15 0 0"
             gltf-model="10.gltf"
             shadow="receive:true"
-            animation-mixer="loop:repeat"
+            animation-mixer="loop:pingpong"
             ></a-entity>
+
+            <a-entity sound="src: #sound" autoplay="true"></a-entity>
 
                 <a-animation attribute="rotation" dur="7000" to="0 360 0" easing="linear" repeat="indefinite">
                 </a-animation>
-                
+
 
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
+
+        <script>
+            AFRAME.registerComponent('soundhandler', {
+                tick: function () {
+                     var entity = document.querySelector('[sound]');
+                     if (document.querySelector('a-marker').object3D.visible == true) {
+                         entity.components.sound.playSound();
+                     } else {
+                         entity.components.sound.stopSound();
+                     }
+                }
+});
+            </script>
     </body>
 </html>
